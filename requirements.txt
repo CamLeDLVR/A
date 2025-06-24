@@ -1,0 +1,5 @@
+streamlit
+urllib
+moviepy
+openai
+tempfile
