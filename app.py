@@ -82,7 +82,7 @@ score: 0"""
 # ---------------- Streamlit UI ----------------
 st.title("English Accent Classifier from Video")
 
-video_url = st.text_input("Enter Video URL:")
+video_url = st.text_input("Enter Video URL (.mp4 format):")
 
 if st.button("Analyze") and video_url:
     with st.spinner("Downloading and processing..."):
@@ -99,4 +99,4 @@ if st.button("Analyze") and video_url:
         except Exception as e:
             st.error(f"Error: {e}")
 else:
-    st.info("Please enter a video URL and click Analyze.")
+    st.info("Please enter a video URL (.mp4 format) and click Analyze.")
